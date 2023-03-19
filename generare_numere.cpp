@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    ofstream g("numere2.txt");
+    ofstream g("numere.txt");
 
     srand(time(NULL));
 
