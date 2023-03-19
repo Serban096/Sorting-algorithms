@@ -224,8 +224,8 @@ bool verifSortare(int a[], int n)
 
 int main()
 {
-    ifstream f("numere2.txt");
-    ofstream g("sortate2.txt");
+    ifstream f("numere.txt");
+    ofstream g("sortate.txt");
     int n, numarTeste, nmax;
     f>>numarTeste;
     for(int i=0; i<numarTeste; i++){
@@ -250,7 +250,7 @@ int main()
         g<<verifSortare(introS, n)<<endl;
         g << "Timpul sortarii:  "
         << chrono::duration_cast<chrono::microseconds>(end6 - start6).count()
-        << " µs" << endl<<endl;
+        << " Âµs" << endl<<endl;
 
         if(n <= 100000){
             g<<"SELECTIONSORT"<<endl;
@@ -260,7 +260,7 @@ int main()
             g<<verifSortare(selectionS, n)<<endl;
             g << "Timpul sortarii:  "
             << chrono::duration_cast<chrono::microseconds>(end - start).count()
-            << " µs" << endl<<endl;
+            << " Âµs" << endl<<endl;
         }
 
         g<<"RADIXSORT BAZA 65536"<<endl;
@@ -270,7 +270,7 @@ int main()
         g<<verifSortare(radixS2, n)<<endl;
         g << "Timpul sortarii:  "
         << chrono::duration_cast<chrono::microseconds>(end - start).count()
-        << " µs" << endl<<endl;
+        << " Âµs" << endl<<endl;
 
         g<<"RADIXSORT BAZA 16"<<endl;
         auto start7 = chrono::steady_clock::now();
@@ -279,7 +279,7 @@ int main()
         g<<verifSortare(radixS3, n)<<endl;
         g << "Timpul sortarii:  "
         << chrono::duration_cast<chrono::microseconds>(end7 - start7).count()
-        << " µs" << endl<<endl;
+        << " Âµs" << endl<<endl;
 
         g<<"RADIXSORT BAZA 10"<<endl;
         auto start2 = chrono::steady_clock::now();
@@ -288,7 +288,7 @@ int main()
         g<<verifSortare(radixS, n)<<endl;
         g << "Timpul sortarii:  "
         << chrono::duration_cast<chrono::microseconds>(end2 - start2).count()
-        << " µs" << endl <<endl;
+        << " Âµs" << endl <<endl;
 
         g<<"MERGESORT"<<endl;
         auto start3 = chrono::steady_clock::now();
@@ -297,7 +297,7 @@ int main()
         g<<verifSortare(mergeS, n)<<endl;
         g << "Timpul sortarii:  "
         << chrono::duration_cast<chrono::microseconds>(end3 - start3).count()
-        << " µs" << endl <<endl;
+        << " Âµs" << endl <<endl;
 
         g<<"SHELLSORT"<<endl;
         auto start4= chrono::steady_clock::now();
@@ -306,7 +306,7 @@ int main()
         g<<verifSortare(shellS, n)<<endl;
         g << "Timpul sortarii:  "
         << chrono::duration_cast<chrono::microseconds>(end4 - start4).count()
-        << " µs" << endl<<endl;
+        << " Âµs" << endl<<endl;
 
         g<<"COUNTSORT"<<endl;
         auto start5 = chrono::steady_clock::now();
@@ -315,7 +315,7 @@ int main()
         g<<verifSortare(countS, n)<<endl;
         g << "Timpul sortarii:  "
         << chrono::duration_cast<chrono::microseconds>(end5 - start5).count()
-        << " µs" << endl<<endl;
+        << " Âµs" << endl<<endl;
     }
     return 0;
 }
