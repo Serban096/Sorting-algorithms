@@ -1,3 +1,4 @@
-# Algoritmi de sortare
+# Sorting Algorithms
 
-Implementarea a 5 algoritmi de sortare si compararea vitezei de sortare pe diferite teste
+Implementing 5 sorting algorithms and comparing the speed on various tests
+ 
